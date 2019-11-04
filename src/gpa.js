@@ -1,41 +1,41 @@
 const readlineSync = require("readline-sync");
 
-const letterGrade = String(readlineSync.question("\nEnter a letter grade: "));
+const grade = String(readlineSync.question("\nEnter a letter grade: "));
 
-if (letterGrade == "A+" || letterGrade == "A" || letterGrade == "a+" || letterGrade == "a") {
+if (grade == "A+" || grade == "A" || grade == "a+" || grade == "a") {
       console.log("\nYour GPA is 4.00.")
 
-} else if  (letterGrade == "A-" || letterGrade == "a-") {
+} else if  (grade == "A-" || grade == "a-") {
       console.log("\nYour GPA is 3.67.")
 
-} else if  (letterGrade == "B+" || letterGrade == "b+") {
+} else if  (grade == "B+" || grade == "b+") {
       console.log("\nYour GPA is 3.33.")
 
-} else if  (letterGrade == "B"  || letterGrade == "b") {
+} else if  (grade == "B"  || grade == "b") {
       console.log("\nYour GPA is 3.00.")
 
-} else if  (letterGrade == "B-" || letterGrade == "b-") {
+} else if  (grade == "B-" || grade == "b-") {
       console.log("\nYour GPA is 2.67.")
 
-} else if  (letterGrade == "C+" || letterGrade == "c+") {
+} else if  (grade == "C+" || grade == "c+") {
       console.log("\nYour GPA is 2.33.")
 
-} else if  (letterGrade == "C"  || letterGrade == "c") {
+} else if  (grade == "C"  || grade == "c") {
       console.log("\nYour GPA is 2.00.")
 
-} else if  (letterGrade == "C-" || letterGrade == "c-") {
+} else if  (grade == "C-" || grade == "c-") {
       console.log("\nYour GPA is 1.67.")
 
-} else if  (letterGrade == "D+" || letterGrade == "d+") {
+} else if  (grade == "D+" || grade == "d+") {
       console.log("\nYour GPA is 1.33.")
 
-} else if  (letterGrade == "D"  || letterGrade == "d") {
+} else if  (grade == "D"  || grade == "d") {
       console.log("\nYour GPA is 1.00.")
 
-} else if  (letterGrade == "D-" || letterGrade == "d-") {
+} else if  (grade == "D-" || grade == "d-") {
       console.log("\nYour GPA is 0.67.")
 
-} else if  (letterGrade == "F"  || letterGrade == "f") {
+} else if  (grade == "F"  || grade == "f") {
       console.log("\nYour GPA is 0.00.")
 
 } else {
