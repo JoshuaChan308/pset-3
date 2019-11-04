@@ -2,6 +2,8 @@ const readlineSync = require("readline-sync");
 
 const grade = Number(readlineSync.question("\nEnter a number: "));
 
+const min = 0
+const max = 100
 
 if (grade>= 90 && grade <= 100 )  {
 	console.log("\nYou recieved an A.");
@@ -25,4 +27,12 @@ else if (grade >= 0 && grade <= 59 )  {
 
 else if (Number.isNaN(grade)){
   console.log("\nInvalid.");
+}
+
+else if (grade<min) {
+	console.log("\nInvalid.");
+}
+
+else if (grade>max){
+	console.log("\nInvalid.");
 }
