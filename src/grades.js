@@ -8,15 +8,15 @@ if (grade>= 90 && grade <= 100 )  {
 }
 
 else if (grade >= 80 && grade <= 89 )  {
-	console.log("\nYou recieved an B.");
+	console.log("\nYou recieved a B.");
 }
 
 else if (grade >= 70 && grade <= 79 )  {
-	console.log("\nYou recieved an C.");
+	console.log("\nYou recieved a C.");
 }
 
 else if (grade >= 60 && grade <= 69 )  {
-	console.log("\nYou recieved an D.");
+	console.log("\nYou recieved a D.");
 }
 
 else if (grade >= 0 && grade <= 59 )  {
