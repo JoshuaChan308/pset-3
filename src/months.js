@@ -1,41 +1,41 @@
 const readlineSync = require("readline-sync");
 
-const month = String(readlineSync.question("\nEnter a month: "));
+const month = String(readlineSync.question("\nEnter a month: ")).toLowerCase();
 
-if (month == "January" || month == "january" || month == "Jan" || month == "jan") {
+if (month == "january" || month == "jan") {
       console.log("\n31 days.")
 
-} else if (month == "February" || month == "february" || month == "Feb" || month == "feb") {
+} else if (month == "february" || month == "feb") {
       console.log("\n28 or 29 days.")
 
-} else if (month == "March" || month == "march" || month == "Mar" || month == "mar") {
+} else if (month == "march" || month == "mar") {
       console.log("\n31 days.")
 
-} else if (month == "April" || month == "april" || month == "Apr" || month == "apr") {
+} else if (month == "april" || month == "apr") {
       console.log("\n30 days.")
 
-} else if (month == "May" || month == "may") {
+} else if (month == "may") {
       console.log("\n31 days.")
 
-} else if (month == "June" || month == "june" || month == "Jun" || month == "jun") {
+} else if (month == "june" || month == "jun") {
       console.log("\n30 days.")
 
-} else if (month == "July" || month == "july" || month == "Jul" || month == "jul") {
+} else if (month == "july" || month == "jul") {
       console.log("\n31 days.")
 
-} else if (month == "August" || month == "august" || month == "Aug" || month == "aug") {
+} else if (month == "august" || month == "aug") {
       console.log("\n31 days.")
 
-} else if (month == "September" || month == "september" || month == "Sep" || month == "sep") {
+} else if (month == "september" || month == "sep") {
       console.log("\n30 days.")
 
-} else if (month == "October" || month == "october" || month == "Oct" || month == "oct") {
+} else if (month == "october" || month == "oct") {
       console.log("\n31 days.")
 
-} else if (month == "November" || month == "november" || month == "Nov" || month == "nov") {
+} else if (month == "november" || month == "nov") {
       console.log("\n30 days.")
 
-} else if (month == "December" || month == "december" || month == "Dec" || month == "dec") {
+} else if (month == "december" || month == "dec") {
       console.log("\n31 days.")
 
 } else {
