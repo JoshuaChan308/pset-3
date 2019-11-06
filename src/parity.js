@@ -14,5 +14,5 @@ if (!Number.isInteger(number)) {
       console.log("\nEven.")
     }
   else {
-      console.log("\nEven.")
+      console.log("\nOdd.")
     }
