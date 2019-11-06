@@ -1,15 +1,30 @@
 const readlineSync = require("readline-sync");
 
-const MIN = 0;
-const MAX = Number.MAX_SAFE_INTEGER;
+let year = Number(readlineSync.question("\nEnter a year: "));
 
-const year = Number(readlineSync.question("\nEnter a year: "));
-    if (Number.isNaN(year)) {
-    console.log("\nInvalid.")
-  } else if (year < MIN || year > MAX) {
-    console.log("\nInvalid.")
-  } else if (year % 4 == 0) {
-    console.log("\n" + year + " is a leap year.")
-  } else {
-    console.log("\n" + year + " is not a leap year.")
+if (!Number.isNaN(year)) {
+  if (year>0 && year<= Number.MAX_SAFE_INTEGER) {
+    if (year%4==0) {
+      if (year%100!=0) {
+        console.log("\n" + year + " is a leap year.\n");
+      }
+      else {
+        if (year%400==0) {
+          console.log("\n" + year + " is a leap year.\n");
+        }
+        else {
+          console.log("\n" + year + " is not a leap year.\n");
+        }
+      }
+    }
+    else {
+      console.log("\n" + year + " is not a leap year.\n");
+    }
   }
+  else {
+    console.log("\nInvalid.\n");
+  }
+}
+else {
+    console.log("\nInvalid.\n");
+}
