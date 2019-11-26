@@ -1,6 +1,7 @@
 const readlineSync = require("readline-sync");
 
 const card = readlineSync.question("\nEnter a playing card: ");
+
 let cardName = card.toLowerCase();
 
 if (cardName == "as") {
